@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Mengubah method draw() di entity.Plane, entity.gem.Gem, dan entity.FloatingScore menjadi drawTo(GraphicsContext gc)&#10;Sehingga ketiga class tadi tidak perlu memiliki atribut gc">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_11.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TMD.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TMD/compile.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TMD/controller/Gameplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TMD/controller/Gameplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TMD/entity/FloatingScore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TMD/entity/FloatingScore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TMD/entity/Plane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TMD/entity/Plane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TMD/entity/gem/GameOver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TMD/entity/gem/GameOver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TMD/entity/gem/Gem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TMD/entity/gem/Gem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TMD/entity/gem/Jade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TMD/entity/gem/Jade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TMD/entity/gem/Phosphophyllite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TMD/entity/gem/Phosphophyllite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TMD/entity/gem/Rutile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TMD/entity/gem/Rutile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TMD/entity/gem/YellowDiamond.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TMD/entity/gem/YellowDiamond.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TMD/entity/gem/Zircon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TMD/entity/gem/Zircon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/DataUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/DataUpdater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Gameplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/FloatingScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/FloatingScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Plane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/gem/GameOver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/gem/GameOver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/gem/Gem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/gem/Gem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/gem/Jade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/gem/Jade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/gem/Phosphophyllite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/gem/Phosphophyllite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/gem/Rutile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/gem/Rutile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/gem/YellowDiamond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/gem/YellowDiamond.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/gem/Zircon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/gem/Zircon.java" afterDir="false" />
-    </list>
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -574,26 +547,34 @@
       <workItem from="1527257073066" duration="9732000" />
       <workItem from="1527266974078" duration="15977000" />
       <workItem from="1527334957010" duration="233000" />
-      <workItem from="1527336016152" duration="1181000" />
+      <workItem from="1527336016152" duration="1236000" />
     </task>
+    <task id="LOCAL-00001" summary="Mengubah method draw() di entity.Plane, entity.gem.Gem, dan entity.FloatingScore menjadi drawTo(GraphicsContext gc)&#10;Sehingga ketiga class tadi tidak perlu memiliki atribut gc">
+      <created>1527337225684</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1527337225684</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196176000" />
+    <option name="totallyTimeSpent" value="196231000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.32751092" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32751092" />
       <window_info anchor="right" id="Palette&#9;" order="10" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="bottom" id="Event Log" order="17" side_tool="true" weight="0.3282572" />
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.32978722" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32896653" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3202329" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.3282572" />
       <window_info id="Capture Tool" order="5" />
