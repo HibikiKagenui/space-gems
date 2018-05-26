@@ -35,18 +35,12 @@ public class Gem {
     protected String type;
     protected Integer score;
 
-    private GraphicsContext gc;
     private String direction;
     private double x;
     private double y;
     private double speed;
 
-    public Gem() {
-    }
-
-    Gem(GraphicsContext gc) {
-        this.gc = gc;
-
+    Gem() {
         Random rand = new Random();
 
         // randomize direction
@@ -153,7 +147,7 @@ public class Gem {
     /**
      * Mengambar batu ke gc canvas
      */
-    public void draw() {
+    public void drawTo(GraphicsContext gc) {
         gc.drawImage(image, x, y, width, height);
     }
 

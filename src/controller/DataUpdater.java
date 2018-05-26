@@ -13,12 +13,12 @@ import java.util.HashMap;
  */
 public class DataUpdater implements Runnable {
     // atribut-atribut ini diisi value dari view gameplayview ketika class ini dibuatkan instance nya
-    private HashMap<String, Integer> rockCounters;
+    private HashMap<String, Integer> gemCounters;
     private String username;
     private Integer newScore;
 
-    public DataUpdater(HashMap<String, Integer> rockCounters, String username, Integer newScore) {
-        this.rockCounters = rockCounters;
+    public DataUpdater(HashMap<String, Integer> gemCounters, String username, Integer newScore) {
+        this.gemCounters = gemCounters;
         this.username = username;
         this.newScore = newScore;
     }
@@ -31,7 +31,7 @@ public class DataUpdater implements Runnable {
         // menentukan jenisKoleksi mana yang memiliki nilai tertinggi yang pernah didapatkan di permainan terkahir
         String jenisKoleksi = "";
         for (String x : Gem.types) {
-            if (rockCounters.get(x) > 0) {
+            if (gemCounters.get(x) > 0) {
                 // bila counter tipe batu di atas 0 (pernah didapatkan di permainan terakhir)
                 // ambil tipe batu dan hentikan looping
                 jenisKoleksi = x;

@@ -15,7 +15,7 @@ public class Plane {
     public static final double height = 100;
     private static final double speedModifier = 5;
     private static double speed = 15;
-    private GraphicsContext gc;
+
     private Image image;
     private double x;
     private double y;
@@ -26,8 +26,7 @@ public class Plane {
     private boolean LEFT;
     private boolean RIGHT;
 
-    public Plane(GraphicsContext gc, double x, double y) {
-        this.gc = gc;
+    public Plane(double x, double y) {
         this.image = new Image(getClass().getResource("assets\\plane.png").toExternalForm());
         this.x = x;
         this.y = y;
@@ -132,7 +131,7 @@ public class Plane {
     /**
      * Menggambar pesawat ke gc canvas
      */
-    public void draw() {
+    public void drawTo(GraphicsContext gc) {
         gc.drawImage(image, x, y, width, height);
     }
 

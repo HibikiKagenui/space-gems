@@ -13,14 +13,12 @@ public class FloatingScore {
     // batas waktu pergerakan floating score setelah dimunculkan di canvas
     private static final int stepLimit = 30;
 
-    private GraphicsContext gc;
     private int score;
     private double x;
     private double y;
     private int step;
 
-    public FloatingScore(GraphicsContext gc, int score, double x, double y) {
-        this.gc = gc;
+    public FloatingScore(int score, double x, double y) {
         this.score = score;
         this.x = x;
         this.y = y;
@@ -47,7 +45,7 @@ public class FloatingScore {
     /**
      * Method menggambarkan floating score ke gc canvas
      */
-    public void draw() {
+    public void drawTo(GraphicsContext gc) {
         gc.setFill(Color.GOLDENROD);
         gc.fillText("" + score, x, y);
     }

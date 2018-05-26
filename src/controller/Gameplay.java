@@ -57,7 +57,7 @@ public class Gameplay implements Runnable {
         this.newScore = 0;
 
         // buat instance pesawat player
-        this.plane = new Plane(gc, (Constant.WIDTH / 2) - 50, Constant.HEIGHT - 100);
+        this.plane = new Plane((Constant.WIDTH / 2) - 50, Constant.HEIGHT - 100);
 
         // buat instance keempat list
         gems = new ArrayList<>();
@@ -123,14 +123,14 @@ public class Gameplay implements Runnable {
             gc.fillText("CURRENTLY PLAYING: " + username, 25, 25);
             gc.fillText("" + newScore, Constant.WIDTH - 50, 25);
             // Draw plane
-            plane.draw();
+            plane.drawTo(gc);
             // Draw gems
             for (Gem x : gems) {
-                x.draw();
+                x.drawTo(gc);
             }
             // Draw floating scores
             for (FloatingScore x : fs) {
-                x.draw();
+                x.drawTo(gc);
             }
             if (frameCounter % spawnFrequency == 0 && frameCounter > 300) {
                 // Random tipe batu yang akan dispawn dan spawn setiap beberapa detik
@@ -138,22 +138,22 @@ public class Gameplay implements Runnable {
                 type = Gem.types.get(rand.nextInt(6));
                 switch (type) {
                     case "Yellow Diamond":
-                        gems.add(new YellowDiamond(gc));
+                        gems.add(new YellowDiamond());
                         break;
                     case "Zircon":
-                        gems.add(new Zircon(gc));
+                        gems.add(new Zircon());
                         break;
                     case "Jade":
-                        gems.add(new Jade(gc));
+                        gems.add(new Jade());
                         break;
                     case "Rutile":
-                        gems.add(new Rutile(gc));
+                        gems.add(new Rutile());
                         break;
                     case "Phosphophyllite":
-                        gems.add(new Phosphophyllite(gc));
+                        gems.add(new Phosphophyllite());
                         break;
                     case "Game Over":
-                        gems.add(new GameOver(gc));
+                        gems.add(new GameOver());
                         break;
                 }
             }
@@ -185,7 +185,7 @@ public class Gameplay implements Runnable {
                         // masukkan batu ke list deleteGems
                         deleteGems.add(x);
                         // buat object floating score
-                        fs.add(new FloatingScore(gc, x.getScore(), x.getX(), x.getY()));
+                        fs.add(new FloatingScore(x.getScore(), x.getX(), x.getY()));
                     }
                 }
                 // periksa jika ada batu yang belum dikenai pesawat tetapi sudah melewati batas window
