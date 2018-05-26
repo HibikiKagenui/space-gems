@@ -1,0 +1,64 @@
+.root {
+    /*-fx-background-image: url('../assets/space.jpeg');*/
+    -fx-background-repeat: stretch;
+    -fx-background-size: 800 600;
+    -fx-background-position: center center;
+}
+
+.label {
+    -fx-font-family: BigNoodleTooOblique;
+    -fx-font-size: 16pt;
+}
+
+.table-view {
+    -fx-background-color: white;
+}
+
+.table-view .column-header-background .label {
+    -fx-background-color: transparent;
+    -fx-text-fill: #262626;
+    -fx-font-size: 12pt;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: black;
+}
+
+.table-row-cell {
+    -fx-background-color: -fx-table-cell-border-color, white;
+    -fx-border-insets: 0;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #005797;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background,
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    /*-fx-background-color: transparent;*/
+}
+
+.button, .text-field, .combo-box, .combo-box-popup .list-view .list-cell {
+    -fx-background-radius: 50;
+    -fx-border-insets: 0;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-radius: 15;
+    -fx-border-insets: 0;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: white, white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 8, 0.0, 0, 0);
+}
